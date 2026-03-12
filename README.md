@@ -6,7 +6,7 @@
 - Next.js App Router + TypeScript
 - Tailwind CSS（自定义 city-guide 视觉）
 - 内容以 `src/content/*.ts` 本地数据为主，可平滑迁移至 CMS
-- 组件化布局（Hero、SectionHeader、Card、TicketPanel 等）
+- 组件化布局（Hero、SectionHeader、Card、TicketPanel、AIPlanner、MapHighlight 等）
 
 ## 快速开始
 ```bash

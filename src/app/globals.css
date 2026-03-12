@@ -2,8 +2,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #04070f;
-  --foreground: #e6edf7;
+  --background: #f7f4ef;
+  --foreground: #0f172a;
 }
 
 @theme inline {
@@ -19,19 +19,25 @@ body {
 }
 
 .section-padding {
-  padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 6vw, 4.5rem);
+  padding: clamp(2rem, 5vw, 4.5rem) clamp(1.5rem, 6vw, 5rem);
 }
 
-.card-glass {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 1.75rem;
-  box-shadow: 0 20px 60px rgba(2, 6, 23, 0.35);
-  backdrop-filter: blur(18px);
+.card-surface {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 1.5rem;
+  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.12);
 }
 
-.text-gradient {
-  background: linear-gradient(120deg, #f5d260, #f25c54);
-  -webkit-background-clip: text;
-  color: transparent;
+.soft-gradient {
+  background: radial-gradient(circle at top left, #f5d260, transparent 45%),
+    radial-gradient(circle at bottom right, rgba(242, 92, 84, 0.35), transparent 50%),
+    #f7f4ef;
+}
+
+.tag-pill {
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.05);
+  padding: 0.35rem 0.85rem;
+  font-size: 0.75rem;
 }

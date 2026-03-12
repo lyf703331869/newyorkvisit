@@ -8,10 +8,10 @@ export const QuickLinks = ({ links }: Props) => (
       <a
         key={link.title}
         href={link.href}
-        className="card-glass block p-5 transition hover:border-white/30"
+        className="card-surface block p-5 transition hover:shadow-2xl"
       >
-        <h3 className="text-lg font-semibold text-white">{link.title}</h3>
-        <p className="mt-2 text-sm text-slate-400">{link.desc}</p>
+        <h3 className="text-lg font-semibold text-slate-900">{link.title}</h3>
+        <p className="mt-2 text-sm text-slate-600">{link.desc}</p>
       </a>
     ))}
   </div>

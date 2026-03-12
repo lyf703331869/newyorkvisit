@@ -56,4 +56,12 @@ export const museums: Museum[] = [
     mustSee: ["航天飞机 Enterprise", "Concorde"],
     ticket: { label: "购票", url: "https://www.intrepidmuseum.org" },
   },
+  {
+    name: "惠特尼美国艺术博物馆",
+    highlight: "聚焦 20/21 世纪美国艺术，俯瞰 High Line",
+    suitedFor: "当代艺术 / 设计",
+    duration: "1.5-2 小时",
+    mustSee: ["美国当代艺术双年展", "顶层露台"],
+    ticket: { label: "预约", url: "https://whitney.org" },
+  },
 ];
