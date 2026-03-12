@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #04070f;
+  --foreground: #e6edf7;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: 'Noto Sans SC', var(--font-geist-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Noto Sans SC', var(--font-geist-sans), sans-serif;
+}
+
+.section-padding {
+  padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 6vw, 4.5rem);
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.75rem;
+  box-shadow: 0 20px 60px rgba(2, 6, 23, 0.35);
+  backdrop-filter: blur(18px);
+}
+
+.text-gradient {
+  background: linear-gradient(120deg, #f5d260, #f25c54);
+  -webkit-background-clip: text;
+  color: transparent;
+}
