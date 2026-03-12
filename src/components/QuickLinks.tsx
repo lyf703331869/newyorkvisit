@@ -1,4 +1,4 @@
-type QuickLink = { title: string; href: string; desc: string };
+type QuickLink = { title: string; href: string; desc: string; icon?: string };
 
 type Props = { links: QuickLink[] };
 
@@ -8,10 +8,17 @@ export const QuickLinks = ({ links }: Props) => (
       <a
         key={link.title}
         href={link.href}
-        className="card-surface block p-5 transition hover:shadow-2xl"
+        className="card-surface flex items-center gap-4 p-5 transition hover:shadow-2xl"
       >
-        <h3 className="text-lg font-semibold text-slate-900">{link.title}</h3>
-        <p className="mt-2 text-sm text-slate-600">{link.desc}</p>
+        {link.icon && (
+          <span className="text-2xl" aria-hidden>
+            {link.icon}
+          </span>
+        )}
+        <div>
+          <h3 className="text-lg font-semibold text-slate-900">{link.title}</h3>
+          <p className="mt-1 text-sm text-slate-600">{link.desc}</p>
+        </div>
       </a>
     ))}
   </div>

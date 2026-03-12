@@ -18,13 +18,13 @@ import { itineraries } from "@/content/itineraries";
 import { essentials } from "@/content/essentials";
 
 const quickLinks = [
-  { title: "热门景点", href: "/attractions", desc: "纽约必去地标" },
-  { title: "博物馆", href: "/museums", desc: "世界级收藏" },
-  { title: "百老汇", href: "/broadway", desc: "剧目推荐" },
-  { title: "经典行程", href: "/itineraries", desc: "1/3/5 日路线" },
-  { title: "门票聚合", href: "/tickets", desc: "官方 & 折扣" },
-  { title: "实用信息", href: "/essentials", desc: "交通 / eSIM / 安全" },
-  { title: "AI 行程", href: "#ai-planner", desc: "自动排程" },
+  { title: "热门景点", href: "/attractions", desc: "纽约必去地标", icon: "🗽" },
+  { title: "博物馆", href: "/museums", desc: "世界级收藏", icon: "🖼️" },
+  { title: "百老汇", href: "/broadway", desc: "剧目推荐", icon: "🎭" },
+  { title: "经典行程", href: "/itineraries", desc: "1/3/5 日路线", icon: "🧭" },
+  { title: "门票聚合", href: "/tickets", desc: "官方 & 折扣", icon: "🎟️" },
+  { title: "实用信息", href: "/essentials", desc: "交通 / eSIM / 安全", icon: "📌" },
+  { title: "AI 行程", href: "#ai-planner", desc: "自动排程", icon: "🤖" },
 ];
 
 export default function HomePage() {
@@ -56,7 +56,7 @@ export default function HomePage() {
         </div>
         <div className="relative overflow-hidden rounded-[2.5rem]">
           <Image
-            src="https://images.unsplash.com/photo-1469478712200-7d269f6543ce?auto=format&fit=crop&w=1400&q=80"
+            src="/images/hero.jpg"
             alt="New York skyline"
             width={900}
             height={900}

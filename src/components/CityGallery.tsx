@@ -3,7 +3,7 @@ import { galleryHighlights } from "@/content/gallery";
 
 export const CityGallery = () => (
   <div className="grid gap-4 lg:grid-cols-3">
-    {galleryHighlights.map((item) => (
+    {galleryHighlights.map((item, idx) => (
       <figure key={item.title} className="overflow-hidden rounded-3xl shadow-xl">
         <div className="relative h-64 w-full">
           <Image
@@ -12,7 +12,7 @@ export const CityGallery = () => (
             fill
             className="object-cover transition duration-500 hover:scale-105"
             sizes="(min-width: 1024px) 33vw, 100vw"
-            priority
+            priority={idx === 0}
           />
         </div>
         <figcaption className="bg-white px-5 py-4">
